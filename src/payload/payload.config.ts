@@ -89,8 +89,16 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-  cors: ['http://localhost:5000', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(Boolean),
-  csrf: ['https://localhost:5000', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(Boolean),
+  cors: [
+    'http://localhost:5000',
+    'https://gadgetpunk.netlify.app',
+    process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
+  ].filter(Boolean),
+  csrf: [
+    'https://localhost:5000',
+    'https://gadgetpunk.netlify.app',
+    process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
+  ].filter(Boolean),
   endpoints: [
     {
       path: '/create-payment-intent',

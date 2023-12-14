@@ -8,7 +8,7 @@ const defaultOpenGraph: Metadata['openGraph'] = {
     'Gadget Punk is a Chittagong based online shop for quality mobile and digital accessories. Buy headphones, earphones, powerbanks, smartwatches with the best price possible',
   images: [
     {
-      url: 'http://localhost:3000/gadgetlogo.png',
+      url: 'https://gadgetpunk.netlify.app/gadgetlogo.png',
     },
   ],
 }
