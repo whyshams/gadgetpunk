@@ -91,11 +91,15 @@ export default buildConfig({
   },
   cors: [
     'http://localhost:5000',
+    'https://gadgetpunkpayloadcms.onrender.com',
+    'https://gadgetpunkbackend.onrender.com',
     'https://gadgetpunk.netlify.app',
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
   ].filter(Boolean),
   csrf: [
     'https://localhost:5000',
+    'https://gadgetpunkpayloadcms.onrender.com',
+    'https://gadgetpunkbackend.onrender.com',
     'https://gadgetpunk.netlify.app',
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
   ].filter(Boolean),
