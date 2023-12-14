@@ -26,7 +26,6 @@ export default async function Product({ params: { slug } }) {
       slug,
       draft: isDraftMode,
     })
-    console.log(product)
   } catch (error) {
     console.error(error) // eslint-disable-line no-console
   }

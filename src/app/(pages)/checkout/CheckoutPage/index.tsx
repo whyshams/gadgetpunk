@@ -50,7 +50,7 @@ export const CheckoutPage: React.FC<{
         { amount: cartTotal, orderId: 1 },
         { withCredentials: true },
       )
-      console.log(data)
+
       window.location.href = data.bkashURL
     } catch (e) {
       setError('Something went wrong.')

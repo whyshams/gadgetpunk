@@ -49,7 +49,6 @@ const page = () => {
 
       const bigi = await response.json()
       setOrderData(bigi)
-      console.log(bigi)
 
       const productDetails = bigi?.cart.map(product => ({
         name: product.product.title,
@@ -60,7 +59,6 @@ const page = () => {
         .map(product => `${product.name} * (${product.quantity})`)
         .join(', ')
       setOrderData(productInfoString)
-      console.log(productInfoString)
 
       const templateParams = {
         user_email: `${bigi?.email}`,
@@ -73,7 +71,6 @@ const page = () => {
         product: productInfoString,
         method: 'Paid with Bkash',
       }
-      console.log(templateParams)
 
       emailjs.send('service_63nsj84', 'template_ez778is', templateParams, 'qt16HcWNsvGhYTfa3').then(
         function (response) {

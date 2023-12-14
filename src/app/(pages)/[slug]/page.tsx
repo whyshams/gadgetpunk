@@ -70,6 +70,7 @@ export default async function Page({ params: { slug = 'home' } }) {
             <Categories categories={categories} />
             <HR />
             <div>
+              {/* @ts-expect-error Async Server Component */}
               <LatestProduct />
             </div>
             <HR />
@@ -79,6 +80,8 @@ export default async function Page({ params: { slug = 'home' } }) {
             <HR />
 
             <div className={classes.promotion}>
+              {/* @ts-expect-error Async Server Component */}
+
               <FeaturedProduct />
             </div>
             <HR />
@@ -110,8 +113,6 @@ export async function generateMetadata({ params: { slug = 'home' } }): Promise<M
   const { isEnabled: isDraftMode } = draftMode()
 
   let page: Page | null = null
-
-  console.log(staticHome)
 
   try {
     page = await fetchDoc<Page>({

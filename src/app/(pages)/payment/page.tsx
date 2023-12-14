@@ -44,8 +44,6 @@ export default function Payment() {
     }
   }
 
-  console.log(cartTotal)
-
   return (
     <Fragment>
       <Gutter>

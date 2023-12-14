@@ -1,17 +1,25 @@
 /*eslint-disable*/
 
-'use client'
-
-/* prettier-ignore */ import React, { useState, useEffect } from 'react'
+/* prettier-ignore */ import React from 'react'
 
 /* prettier-ignore */ import ProductCarousel from '../LatestProduct/ProductCarousal'
 
 /* prettier-ignore */ import classes from './index.module.scss'
 
-const FeaturedProduct: React.FC = () => {
-  const [products, setProducts] = useState(null)
+const getProduct = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/featured`)
+  return res.json()
+}
 
-  const getProduct = async () => {
+const FeaturedProduct = async () => {
+  // const [products, setProducts] = useState(null)
+
+  const products = await getProduct()
+
+  {
+    /*
+
+   const getProduct = async () => {
     try {
       await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/featured`)
         .then(r => r.json())
@@ -24,13 +32,16 @@ const FeaturedProduct: React.FC = () => {
     getProduct()
   }, [])
 
+*/
+  }
+
   return (
     <div className={classes.container}>
       <div className={classes.titleWrapper}>
         <h3>Featured Produtcs</h3>
       </div>
       <div>
-        <ProductCarousel products={products} />
+        <ProductCarousel products={products.docs[0].relatedProducts} />
       </div>
     </div>
   )
