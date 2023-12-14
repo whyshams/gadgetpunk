@@ -1,0 +1,30 @@
+
+
+.bkash {
+  background: var(--color-gadget-yellow);
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+  color: var(--color-gadget-bg);
+  cursor: pointer;
+  margin: 20px 0px;
+ 
+   &:hover{
+    background: white;
+
+   }
+   p{
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+   }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex{
+  display: flex;
+}

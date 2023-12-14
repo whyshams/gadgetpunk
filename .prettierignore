@@ -1,0 +1,16 @@
+**/payload-types.ts
+
+
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+**/*.html
+**/*.tsx
+**/*.ts
+
+**/src/app/(pages)/cart/page.tsx
+**/src/app/(pages)/checkout/CheckoutPage/index.tsx
+**/src/app/(pages)/[slug]/page.tsx
+

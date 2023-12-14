@@ -1,0 +1,49 @@
+@use '../../../_css/queries.scss' as *;
+
+.card {
+  position: relative;
+  background-color: transparent;
+  min-height: 360px;
+  width: 100%;
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  border-radius: 10px;
+  padding: 16px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  display: grid;
+  
+}
+.button {
+  margin-right: 20px;
+  display: flex;
+  margin-top: 15px;
+  div{
+    margin: 5px;
+  }
+}
+@media (max-width : 768px) {
+.card{
+  margin: 0px;
+  .button{
+    margin-left: 0px;
+  }
+}
+}
+
+

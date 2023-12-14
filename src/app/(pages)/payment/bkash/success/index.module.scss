@@ -1,0 +1,14 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    h2{
+        margin-top: 20px;
+    }
+    .content{
+        text-align: center;
+    }
+}

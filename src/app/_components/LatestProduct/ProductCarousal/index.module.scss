@@ -1,0 +1,77 @@
+@import "../../../_css/queries.scss";
+
+
+.dots {
+  display: flex !important;
+  justify-content: center !important;
+  
+  
+
+  li {
+    button {
+      
+      border: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 5px;
+      box-sizing: border-box; /* Ensure padding and border don't affect the size */
+      padding: 0; /* Remove padding */
+    }
+  }
+}
+
+.dots {
+  .slick-active {
+    button{
+      background-color: transparent;
+      border: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 5px;
+      box-sizing: border-box; /* Ensure padding and border don't affect the size */
+      padding: 0; /* Remove padding */
+    }
+
+  }
+}
+
+
+
+.card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:50px 0px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .cardContent {
+  margin-right: 20px;
+    .img{
+      text-align: center;
+      display: grid;
+  
+    place-items: center;
+    }
+    h3{
+      font-size: 20px;
+    }
+  
+
+  
+
+  }
+  @include small-break {
+    height: auto;
+   
+    display: grid;
+
+  place-items: center;
+  }
+
+
+}

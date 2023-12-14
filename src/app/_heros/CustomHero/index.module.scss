@@ -1,0 +1,119 @@
+@import '../../_css/queries.scss';
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @include small-break {
+    margin: 0;
+  }
+}
+
+.heroWrapper {
+  background-color: var(--color-dark-50);
+  width: 100%;
+  max-width: 1560px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+color: var(--color-dark-50);
+  background-size: cover;
+  background-position: revert;
+  background-repeat: no-repeat;
+
+
+
+.socialmedia{
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  
+}
+
+  @include small-break {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.heroTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15% var(--gutter-h);
+  width: 100%;
+
+
+  @include mid-break {
+    padding: 10% 30px;
+  }
+
+  @include small-break {
+    padding: 50px 30px;
+  }
+
+  h2 {
+    font-size: 70px;
+    margin: 32px 0;
+
+    @include mid-break {
+      font-size: 48px;
+      margin: 24px 0;
+      white-space: wrap;
+    }
+
+    @include small-break {
+      width: 70%;
+      font-size: 36px;
+      margin: 8px 0;
+    }
+  }
+
+  p {
+    font-size: 30px;
+
+    @include mid-break {
+      font-size: 24px;
+    }
+
+    @include small-break {
+      font-size: 18px;
+    }
+  }
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 50px;
+  flex-wrap: wrap;
+
+
+  li a{
+   
+    color: var(--color-gadget-yellow);
+    background: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #ff3366, #ffcc33, #33ccff, #cc33ff, #ff3366) 1;
+    border-image-slice: 1;
+    transition: all 200ms ease-out;
+
+  }
+
+  li a:hover{
+    
+    color: var(--color-gadget-bg);
+    background: var(--color-gadget-yellow);
+    
+  }
+  
+
+ 
+}
+
