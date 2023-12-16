@@ -94,6 +94,9 @@ export default buildConfig({
     'https://gadgetpunkpayloadcms.onrender.com',
     'https://gadgetpunkbackend.onrender.com',
     'https://gadgetpunk.netlify.app',
+    'https://gadgetpunk.net',
+    'https://www.gadgetpunk.net',
+
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
   ].filter(Boolean),
   csrf: [
@@ -101,6 +104,8 @@ export default buildConfig({
     'https://gadgetpunkpayloadcms.onrender.com',
     'https://gadgetpunkbackend.onrender.com',
     'https://gadgetpunk.netlify.app',
+    'https://gadgetpunk.net',
+    'https://www.gadgetpunk.net',
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
   ].filter(Boolean),
   endpoints: [
