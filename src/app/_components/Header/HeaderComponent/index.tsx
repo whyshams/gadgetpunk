@@ -47,7 +47,7 @@ const HeaderComponent = ({ header }: { header: Header }) => {
           </div>
         </div>
         {navOpen && (
-          <div className={classes.mobile_menu}>
+          <div onClick={() => setNavOpen(!navOpen)} className={classes.mobile_menu}>
             <MobileNav header={header} />
           </div>
         )}

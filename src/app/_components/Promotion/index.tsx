@@ -15,6 +15,7 @@ const PromotionComp = ({ promotionData }) => {
 
   useEffect(() => {
     const savedTargetDate = localStorage.getItem('targetDate')
+
     const targetDate = savedTargetDate ? new Date(savedTargetDate) : calculateTargetDate()
 
     const timerInterval = setInterval(() => {
@@ -31,6 +32,9 @@ const PromotionComp = ({ promotionData }) => {
       if (timeDifference === 0) {
         clearInterval(timerInterval)
         // You can add code here to handle what happens when the target date is reached.
+        if (days !== promotionData.days) {
+          localStorage.clear()
+        }
       }
     }, 1000)
 

@@ -20,13 +20,7 @@ export default async function Login() {
     <section className={classes.login}>
       <div className={classes.heroImg}>
         <Link href="/">
-          <Image
-            src="/gadgetlogo.png"
-            alt="logo"
-            width={100}
-            height={100}
-            className={classes.logo}
-          />
+          <Image src="/gadgetlogo.png" alt="logo" width={100} height={100} />
         </Link>
       </div>
 

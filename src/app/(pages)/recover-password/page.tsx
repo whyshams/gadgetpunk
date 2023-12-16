@@ -15,13 +15,7 @@ export default async function RecoverPassword() {
     <section className={classes.recoverPassword}>
       <div className={classes.heroImg}>
         <Link href="/">
-          <Image
-            src="/logo-black.svg"
-            alt="logo"
-            width={250}
-            height={23}
-            className={classes.logo}
-          />
+          <Image src="/gadgetlogo.png" alt="logo" width={100} height={100} />
         </Link>
       </div>
 
